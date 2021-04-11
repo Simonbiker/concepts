@@ -4,16 +4,19 @@ import {Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-  { path: '', component: LandingComponent}
+  { path: '', component: LandingComponent},
+  {path: 'home', component: HomeComponent}
 ]
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
