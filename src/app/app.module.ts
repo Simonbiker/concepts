@@ -5,6 +5,7 @@ import {Routes, RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
+import { ColorChangeComponent } from './front-end-projects/color-change/color-change.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent},
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LandingComponent,
-    HomeComponent
+    HomeComponent,
+    ColorChangeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

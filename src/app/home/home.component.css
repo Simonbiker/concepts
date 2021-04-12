@@ -1,3 +1,7 @@
 .container {
   display: grid;
+  margin: 5px;
+  background-color: blue;
+  min-height: 100px;
+  min-width: 100px;
 }
