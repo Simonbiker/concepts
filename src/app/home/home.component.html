@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div class="container">
+  <div class="front-end">
+    <h3>Fron End</h3>
+    <button (click)="frontBtn()">Concepts</button>
+  </div>
+  <ng-container *ngIf="frontEnd">
+    <div class="section">
+      <h3>Vanilla JavaScript Projects</h3>
+      <p>A list of of projects taken from freeCodeCamp</p>
+    </div>
+  </ng-container>
+
+  <div class="back-end">
+    <h3>back End</h3>
+    <button>Concepts</button>
+  </div>
+</div>

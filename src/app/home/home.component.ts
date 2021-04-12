@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public frontEnd:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  frontBtn() {
+    this.frontEnd = !this.frontEnd;
+  }
 }
