@@ -21,7 +21,8 @@ export class ColorChangeComponent implements OnInit {
           hexColor += hex[Math.floor(Math.random() * hex.length)];
       }
      color.textContent = hexColor; 
-    document.body.style.backgroundColor = hexColor;
+    // document.body.style.backgroundColor = hexColor;
+    document.getElementById('color-background').style.backgroundColor = hexColor;
   });
   }
 
