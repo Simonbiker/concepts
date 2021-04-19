@@ -39,6 +39,20 @@
   letter-spacing: 2px;
 }
 
+.list {
+  flex-direction: column;
+}
+
+.color {
+  grid-column: 1;
+  padding: 10px 0 10px 0;
+}
+
+.counter {
+  grid-column: 2;
+  padding: 10px 0 10px 0;
+}
+
 .section {
   padding: 10px 0 10px 0;
 }

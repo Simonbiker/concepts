@@ -5,14 +5,20 @@
       <h3>Vanilla JavaScript Projects</h3>
       <p>A list of of projects taken from different places.</p>
     </div>
-    <button (click)="frontBtn()" class="btn-background">
-      Background change example
-    </button>
-    <ng-container *ngIf="frontEnd">
-      <app-color-change></app-color-change>
-    </ng-container>
-    <button (click)="counterBtn()" class="btn-counter">Counter example</button>
-    <app-counter *ngIf="counterFront"></app-counter>
+    <div class="list">
+      <div class="color">
+        <button (click)="frontBtn()" class="btn-background">
+          Background change example
+        </button>
+        <app-color-change *ngIf="frontEnd"></app-color-change>
+      </div>
+      <div class="counter">
+        <button (click)="counterBtn()" class="btn-counter">
+          Counter example
+        </button>
+        <app-counter *ngIf="counterFront"></app-counter>
+      </div>
+    </div>
   </div>
 
   <div class="back-end">
