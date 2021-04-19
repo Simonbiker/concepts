@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
 import { ColorChangeComponent } from './front-end-projects/color-change/color-change.component';
+import { CounterComponent } from './front-end-projects/counter/counter/counter.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     LandingComponent,
     HomeComponent,
-    ColorChangeComponent
+    ColorChangeComponent,
+    CounterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

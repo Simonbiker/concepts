@@ -1,16 +1,18 @@
 <div class="container">
   <div class="front-end">
     <h3>Fron End</h3>
+    <div class="section">
+      <h3>Vanilla JavaScript Projects</h3>
+      <p>A list of of projects taken from different places.</p>
+    </div>
     <button (click)="frontBtn()" class="btn-background">
       Background change example
     </button>
     <ng-container *ngIf="frontEnd">
-      <div class="section">
-        <h3>Vanilla JavaScript Projects</h3>
-        <p>A list of of projects taken from different places.</p>
-      </div>
       <app-color-change></app-color-change>
     </ng-container>
+    <button (click)="counterBtn()" class="btn-counter">Counter example</button>
+    <app-counter *ngIf="counterFront"></app-counter>
   </div>
 
   <div class="back-end">
