@@ -1,9 +1,13 @@
 <div class="container">
   <h3>Counter</h3>
-  <span id="value">0</span>
+  <div id="value">{{ count }}</div>
   <div class="button-container">
-    <div class="btn decrease">Decrease</div>
-    <div class="btn reset">Reset</div>
-    <div class="btn increase">Increase</div>
+    <button class="btn decrease" id="decrease" (click)="btnCountDescrease()">
+      Decrease
+    </button>
+    <button class="btn reset" id="rest" (click)="btnCountReset()">Reset</button>
+    <button class="btn increase" id="increase" (click)="btnCountIncrease()">
+      Increase
+    </button>
   </div>
 </div>

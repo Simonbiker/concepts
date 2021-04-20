@@ -6,10 +6,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
+  public count = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+    const btns = document.querySelectorAll(".btn");
+    btns.forEach(function (btn) {
+      this.btnCountIncrease;
+      this.btnCountDescrease;
+      this.btnCountReset;
+  });
+
+  }
+
+  btnCountIncrease() {
+    this.count++;
+    document.getElementById('value').style.color = "green";
+  }
+
+  btnCountDescrease() {
+    this.count--;
+    document.getElementById('value').style.color = "red";
+  }
+
+  btnCountReset() {
+    this.count = 0;
+    document.getElementById('value').style.color = "#222";
   }
 
 }

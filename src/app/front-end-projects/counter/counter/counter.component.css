@@ -6,6 +6,11 @@
   padding: 2em;
 }
 
+#value {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
 .btn {
   text-transform: uppercase;
   background: transparent;
