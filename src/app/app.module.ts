@@ -7,10 +7,12 @@ import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
 import { ColorChangeComponent } from './front-end-projects/color-change/color-change.component';
 import { CounterComponent } from './front-end-projects/counter/counter/counter.component';
+import { MusicPlayerComponent } from './front-end-projects/music-player/music-player/music-player.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'music', component: MusicPlayerComponent}
 ]
 
 
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     LandingComponent,
     HomeComponent,
     ColorChangeComponent,
-    CounterComponent
+    CounterComponent,
+    MusicPlayerComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

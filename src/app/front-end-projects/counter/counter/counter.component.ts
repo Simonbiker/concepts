@@ -13,9 +13,9 @@ export class CounterComponent implements OnInit {
   ngOnInit(): void {
     const btns = document.querySelectorAll(".btn");
     btns.forEach(function (btn) {
-      this.btnCountIncrease;
-      this.btnCountDescrease;
-      this.btnCountReset;
+      this.btnCountDescrease();
+      this.btnCountReset();
+      this.btnCountIncrease();
   });
 
   }
