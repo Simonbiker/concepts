@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ColorChangeComponent } from './front-end-projects/color-change/color-change.component';
 import { CounterComponent } from './front-end-projects/counter/counter/counter.component';
 import { MusicPlayerComponent } from './front-end-projects/music-player/music-player/music-player.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent},
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
